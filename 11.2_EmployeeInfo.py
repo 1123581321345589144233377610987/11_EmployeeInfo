@@ -1,0 +1,10 @@
+import AAclasses
+name = input("Enter name: ")
+number = input("Enter employee number: ")
+shift = int(input("Enter 1 for day shift or 2 for night shift: "))
+pay = float(input("Enter your hourly pay rate (do not include a dollar sign): "))
+employee = AAclasses.ProductionWorker(name, number, shift, pay)
+print(f"\nName: {employee.get_name()}")
+print(f"Employee Number: {employee.get_number()}")
+print(f"Shift: shift {employee.get_shift()}")
+print(f"Hourly pay rate: ${employee.get_pay():.2f}")
